@@ -17,4 +17,4 @@ Ablage zu GitHub Trainingsaufgaben - Fortgeschrittene Aufgaben
 ## 3. Merge
 > a. Sobald der Pull Request angenommen wurde können Sie den Feature Branch mit dem Main Branch mergen und den Feature Branch löschen.
 > 
-> b. Nun sollten Sie sehen das Ihre Datei zusammen mit den anderen Dateien der Teilnehmer und Lernenden im Repository [GitHub-Trainingsaufgaben](https://github.com/espas-bm-it/GitHub-Trainingsaufgaben) hinterlegt sein sollte.!
+> b. Nun sollten Sie sehen das Ihre Datei zusammen mit den anderen Dateien der Teilnehmer und Lernenden im Repository [GitHub-Trainingsaufgaben](https://github.com/espas-bm-it/GitHub-Trainingsaufgaben) hinterlegt sein sollte.
