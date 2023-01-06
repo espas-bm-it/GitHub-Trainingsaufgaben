@@ -10,11 +10,11 @@ Ablage zu GitHub Trainingsaufgaben - Fortgeschrittene Aufgaben
 > **xyz_trainingsaufgabe_git.html**
 
 ## 2. Pull Request
-> a. Vor dem Mergen wird ein Pull Request verlangt. Setzten Sie diesen ab und informieren Sie anschliessend einen Git Specialist noch Mündlich darüber.
+> a. Vor dem Mergen wird ein Pull Request verlangt. Setzten Sie diesen ab und informieren Sie anschliessend einen Git Specialist noch mündlich darüber.
 > 
 > b. Gegebenenfalls lassen Sie sich von einem GL oder Git Specialist noch genauer den Prozess zwischen einem Pull Request und Merge erklären.
 	
 ## 3. Merge
 > a. Sobald der Pull Request angenommen wurde können Sie den Feature Branch mit dem Main Branch mergen und den Feature Branch löschen.
 > 
-> b. Nun sollten Sie sehen das Ihre Datei zusammen mit den anderen Dateien der Teilnehmer und Lernenden im Repository xxx hinterlegt sein sollte.!
+> b. Nun sollten Sie sehen das Ihre Datei zusammen mit den anderen Dateien der Teilnehmer und Lernenden im Repository [GitHub-Trainingsaufgaben](https://github.com/espas-bm-it/GitHub-Trainingsaufgaben) hinterlegt sein sollte.!
