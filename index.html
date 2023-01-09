@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Git Fachwoche - Basics</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            margin: 0 auto;
+            max-width: 100ch;
+        }
+
+        body * {
+            padding: 0.1em 0.25em;
+        }
+
+        .banner,
+        .main-content,
+        .footer {
+            padding: 1em;
+        }
+
+        .banner {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .banner h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            margin-left: auto;
+        }
+
+        .link-container,
+        .nav-link {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .navbar-link {
+            color: black;
+            font-size: 1.2em;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .navbar-link+.navbar-link {
+            padding-left: 1em;
+        }
+
+        .main-content {
+            padding: 1em;
+        }
+
+        h2{
+            margin: 10px 0px 10px 0px;
+        }
+        table,
+        td,
+        th {
+            border: 1px solid #333;
+        }
+
+        img{
+            width: 700px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Trainingsaufgaben Git</h1>
+        <div class="navbar">
+            <ul class="link-container">
+                <li class="link-container__item">
+                    <a class="navbar-link" href="#aufgabe1">
+                        Aufgabe 1
+                    </a>
+                </li>
+                <li class="link-container__item">
+                    <a class="navbar-link" href="#aufgabe2">
+                        Aufgabe 2
+                    </a>
+                </li>
+                <li class="link-container__item">
+                    <a class="navbar-link" href="#aufgabe3">
+                        Aufgabe 3
+                    </a>
+                </li>
+                <li class="link-container__item">
+                    <a class="navbar-link" href="#aufgabe4">
+                        Aufgabe 4
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <h2 id="aufgabe1">Aufgabe 1</h2>
+        <h3>Lorem ipsum dolor</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+            ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <h3>Lorem ipsum dolor</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+            ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <h3>Lorem ipsum dolor</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+            ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        
+        <h2 id="aufgabe2">Aufgabe 2</h2>
+        <table>
+            <tr>
+                <th>Lorem ipsum</th>
+                <th>Lorem ipsum</th>
+            </tr>
+            <tr>
+                <td>ipsum dolor</td>
+                <td>ipsum dolor</td>
+            </tr>
+            <tr>
+                <td>sit amet</td>
+                <td>sit amet</td>
+            </tr>
+        </table>
+        <h2 id="aufgabe3">Aufgabe 3</h2>
+        <img src="https://images.pexels.com/photos/4271927/pexels-photo-4271927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <ul>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+        </ul>
+        <h2 id="aufgabe4">Aufgabe 4</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+            ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    <div class="footer">
+        <p class="copyright-statement">&copy; Copyright ESPAS</p>
+        <p class="site-description">
+            Diese Siete wurde zur Einf&uuml;hrung der ESPAS Lernenden des ersten
+            Lehrjahres erstellt und soll als Ausgangsdatei zur Erlernung der Git
+            Grundfertigkeiten verwendet werden.
+        </p>
+    </div>
+</body>
+
+</html>
