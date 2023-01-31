@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Git Fachwoche - Basics</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            margin: 0 auto;
+            max-width: 100ch;
+        }
+
+        body * {
+            padding: 0.1em 0.25em;
+        }
+
+        .banner,
+        .main-content,
+        .footer {
+            padding: 1em;
+        }
+
+        .banner {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .banner h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            margin-left: auto;
+        }
+
+        .link-container,
+        .nav-link {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .navbar-link {
+            color: black;
+            font-size: 1.2em;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .navbar-link+.navbar-link {
+            padding-left: 1em;
+        }
+
+        .main-content {
+            padding: 1em;
+        }
+
+        h2{
+            margin: 10px 0px 10px 0px;
+        }
+        table,
+        td,
+        th {
+            border: 1px solid #333;
+        }
+
+        img{
+            width: 700px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Trainingsaufgaben Git</h1>
+        <div class="navbar">
+            <ul class="link-container">
+                <li class="link-container__item">
+                    <a class="navbar-link" href="#aufgabe1">
+                        Aufgabe 1
+                    </a>
+                </li>
+                <li class="link-container__item">
+                    <a class="navbar-link" href="#aufgabe2">
+                        Aufgabe 2
+                    </a>
+                </li>
+                <li class="link-container__item">
+                    <a class="navbar-link" href="#aufgabe3">
+                        Aufgabe 3
+                    </a>
+                </li>
+                <li class="link-container__item">
+                    <a class="navbar-link" href="#aufgabe4">
+                        Aufgabe 4
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <h2 id="aufgabe1">Aufgabe 1</h2>
+        <h3>Wie wird ein Repository auf den Computer geklont?</h3>
+        <p>
+        Zuerst muss der Link von Repository kopiert werden. 
+        Danach wird dieser Link auf git Bash zusammen mit Funktion «git clone» eingetragen. 
+        Nach der Ausführung wird Repository lokal gespeichert.
+        </p>
+        <h3>Was bewirkt ein Commit?</h3>
+        <p>
+        Ein «commit» speichert die Veränderungen.
+        </p>
+        <h3>Was erzielt man durch einen Push?</h3>
+        <p>
+        Mit «push» können lokale commits auf remote-branch eingetragen werden.
+        </p>
+        
+        <h2 id="aufgabe2">Aufgabe 2</h2>
+        <table>
+            <tr>
+                <th>Funktionen</th>
+                <th>Beschreibung</th>
+            </tr>
+            <tr>
+                <td>fetch</td>
+                <td>"fetch" legt die Veränderung auf Remote-Repository aus.</td>
+            </tr>
+            <tr>
+                <td>pull</td>
+                <td>"pull" nimmt die Veränderungen im Remote-Repository auf dem lokalen Klon vor.</td>
+            </tr>
+        </table>
+        <h2 id="aufgabe3">Aufgabe 3</h2>
+        <img src="https://th.bing.com/th/id/OIP.27q_asdBRQaqNyd-BfW_hQHaEO?pid=ImgDet&rs=1" alt="">
+        <ul>
+            <li>main: Der Zweck von "main" besteht darin, aktuellste sowie meist überprüfte Version zu behalten. Diese Version soll immer fehlerfrei sein.</li>
+            <li>develop:  Dieser Branch wird zu Beginn eines Projekts erstellt und enthält Code mit neu entwickelten Features, die noch im getestet werden muss.</li>
+            <li>feature: "feature" Branch ist ein Beistandbranch und wird auf der Basis vom "develop"-Branch erstellt. Auf "feature" wird neue Features entwickelt und schlussendlich werden sie mit "develop" fusioniert bzw. gemergt.</li>
+            <li>release: Ein "release" Branch wird erstellt, wenn "develop" genug Features für ein neues Version hat. In diesem Branch werden nur Aufgaben, die kurz bevor Freigabe bewältigt werden sollen, wie Bugfixes, Dokumentationsgenerierung und Prüfungen aufgenommen werden.</li>
+            <li>hotfix: "hotfix" Branch wird erstellt, wenn es ein Problem auf "main" auftaucht. In diesem Branch wird nötige Bugfixes vorgenommen. "hotfix" ist für kleine Bugfixes nach dem Freigabe des aktuelles Versions zweckmässig.</li>
+        </ul>
+        <h2 id="aufgabe4">Aufgabe 4</h2>
+        <p>
+             Git ist ein open-source Programm für Versionsverwaltung. Mit Git Repositorien und Git Workflow können Programmen zweckmässig bearbeitet und veröffentlicht werden.
+             Ein Git Workflow besteht aus verschiedenen Repositorien. Sie werden auch "Branch" genannt. Mit Branchen können verschiedene Aufgaben unter Teams verteilt werden. 
+             Das ermöglicht ein organisiertes Arbeitsweise und vielseitiges Prozess.<br>
+             GitHub ist ein netzbasierter Dienst für Git. Auf GitHub können Entwickler kooperativ an ihren Projekten arbeiten, sie speichern und veröffentlichen.            
+        </p>
+    </div>
+    <div class="footer">
+        <p class="copyright-statement">&copy; Copyright ESPAS</p>
+        <p class="site-description">
+            Diese Seite wurde zur Einf&uuml;hrung der ESPAS Lernenden des ersten
+            Lehrjahres erstellt und soll als Ausgangsdatei zur Erlernung der Git
+            Grundfertigkeiten verwendet werden.
+        </p>
+    </div>
+</body>
+
+</html>
