@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Git Fachwoche - Basics</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            margin: 0 auto;
+            max-width: 100ch;
+        }
+
+        body * {
+            padding: 0.1em 0.25em;
+        }
+
+        .banner,
+        .main-content,
+        .footer {
+            padding: 1em;
+        }
+
+        .banner {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .banner h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            margin-left: auto;
+        }
+
+        .link-container,
+        .nav-link {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .navbar-link {
+            color: black;
+            font-size: 1.2em;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .navbar-link+.navbar-link {
+            padding-left: 1em;
+        }
+
+        .main-content {
+            padding: 1em;
+        }
+
+        h2{
+            margin: 10px 0px 10px 0px;
+        }
+        table,
+        td,
+        th {
+            border: 1px solid #333;
+        }
+
+        img{
+            width: 700px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Trainingsaufgaben Git</h1>
+        <div class="navbar">
+            <ul class="link-container">
+                <li class="link-container__item">
+                    <a class="navbar-link" href="#aufgabe1">
+                        Aufgabe 1
+                    </a>
+                </li>
+                <li class="link-container__item">
+                    <a class="navbar-link" href="#aufgabe2">
+                        Aufgabe 2
+                    </a>
+                </li>
+                <li class="link-container__item">
+                    <a class="navbar-link" href="#aufgabe3">
+                        Aufgabe 3
+                    </a>
+                </li>
+                <li class="link-container__item">
+                    <a class="navbar-link" href="#aufgabe4">
+                        Aufgabe 4
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <h2 id="aufgabe1">Aufgabe 1</h2>
+        <h3>Wie wird ein Repository auf den Computer geklont?</h3>
+        <p>
+            git clone "link"
+        </p>
+        <h3>Was bewirkt ein Commit?</h3>
+        <p>
+            Speichert veraenderungen mit einem Kommentar Lokal.
+        </p>
+        <h3>Was erzielt man durch einen Push?</h3>
+        <p>
+            Push schickt die lokal gespeicherten Dateien nach GitHub. (lokalen-Repository -> remote Repository)
+        </p>
+        
+        <h2 id="aufgabe2">Aufgabe 2</h2>
+        <table>
+            <tr>
+                <th>git fetch</th>
+                <th>git pull</th>
+            </tr>
+            <tr>
+                <td>herunterladen von Inhalten</td>
+                <td>herunterladen von Inhalten</td>
+            </tr>
+            <tr>
+                <td>ohne mergen des Inhalts</td>
+                <td>mit mergen des Inhalts</td>
+            </tr>
+        </table>
+        <h2 id="aufgabe3">Aufgabe 3</h2>
+        <img src="https://www.nobledesktop.com/image/gitresources/git-branches-merge.png" alt="branches">
+        <ul>
+            <li>Main: Main-Branch enthaelt den aktuellen Versionsstand der Software.</li>
+            <li>Develop: Develop-Branch wird gebraucht um features zu integrieren.</li>
+            <li>Feature: Jedes feature sollte einen eigenen Feature-Branch haben und wird nach Fertigstellung mit dem Develop-Branch gemerged.</li>
+            <li>Release: Wenn der Develop-Branch genug features hat wird er in den Release-Branch gemerged.</li>
+            <li>Hotfix: Wenn ein Problem in der Main-Branch auftaucht. Wird ein Hotfix-Branch von der Main erstellt und nach Abschluss des Hotfixes zurueck in die Main- & Develop-Branch gemerged.</li>
+        </ul>
+        <h2 id="aufgabe4">Aufgabe 4</h2>
+        <p>
+            Git ist ein Versionsverwaltungstool, dass die Arbeit an Projecten erleichtert.
+        </p>
+    </div>
+    <div class="footer">
+        <p class="copyright-statement">&copy; Copyright ESPAS</p>
+        <p class="site-description">
+            Diese Siete wurde zur Einf&uuml;hrung der ESPAS Lernenden des ersten
+            Lehrjahres erstellt und soll als Ausgangsdatei zur Erlernung der Git
+            Grundfertigkeiten verwendet werden.
+        </p>
+    </div>
+</body>
+
+</html>
